@@ -74,26 +74,6 @@ namespace PsylabsCase.Data
                 .WithMany()
                 .OnDelete(DeleteBehavior.NoAction);
 
-            //modelBuilder.Entity<ExamQuestionAnswer>()
-            //    .HasOne(t => t.Exam)
-            //    .WithMany(t => t.ExamQuestions)
-            //    .HasForeignKey(t => t.ExamId);
-
-            //modelBuilder.Entity<ExamQuestionAnswer>()
-            //    .HasOne(t => t.Question)
-            //    .WithMany(t => t.ExamQuestions)
-            //    .HasForeignKey(t => t.ExamId);
-
-            //modelBuilder.Entity<ExamQuestionAnswer>()
-            //    .HasOne(t => t.User)
-            //    .WithMany(t => t.ExamQuestions)
-            //    .HasForeignKey(t => t.ExamId);
-
-            //modelBuilder.Entity<ExamQuestionAnswer>()
-            //    .HasOne(t => t.Answer)
-            //    .WithMany(t => t.ExamQuestions)
-            //    .HasForeignKey(t => t.ExamId);
-
             base.OnModelCreating(modelBuilder);
         }
     }
