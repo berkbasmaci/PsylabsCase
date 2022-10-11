@@ -1,0 +1,47 @@
+<!--
+<h3>{{userList.username}}</h3>
+<h3>{{userList.password}}</h3>
+-->
+
+<div *ngFor="let user of userList">
+    <h3>Id</h3><span>{{user.username}}</span>
+    <h3>Name</h3><span>{{user.password}}</span>
+</div> 
+<!--
+<p>asdasdasdsad</p>
+
+
+<h1>Users</h1>
+<div class="d-flex justify-content-center">
+    <div class="spinner-border" role="status">
+        <span class="sr-only" id="loading">Loading...</span>
+    </div>
+</div>
+<table class="table" id='tab'>
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">occupation</th>
+            <th scope="col">Email</th>
+            <th scope="col">Bio</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of userList">
+            <td>{{ user.username }}</td>
+            <td>{{ user.password }}</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h1>Customer List</h1>
+
+<ul>
+    <li *ngFor="let customer of customers">
+        {{customer}}
+    </li>
+</ul>
+
+-->

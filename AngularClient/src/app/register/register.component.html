@@ -1,0 +1,42 @@
+<p>register works!</p>
+
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+    <div>
+      <label for="fullname">
+        FullName
+      </label>
+      <input id="fullnameTxt" [(ngModel)]="fullnameTxt" type="text" formControlName="fullnameTxt">
+    </div>
+
+    <br>
+
+    <div>
+      <label for="username">
+        UserName
+      </label>
+      <input id="usernameTxt" [(ngModel)]="usernameTxt" type="text" formControlName="usernameTxt">
+    </div>
+
+    <br>
+
+    <div>
+        <label for="password">
+          Password
+        </label>
+        <input id="passwordTxt" [(ngModel)]="passwordTxt" type="password" formControlName="passwordTxt">
+      </div>
+      <div>
+
+        <br>
+
+        <label for="isadmin">
+          IsAdmin
+        </label>
+        <input id="isadminChk"  [(ngModel)]="isadminChk" type="checkbox" formControlName="isadminTxt">
+    
+      </div>
+      <br>
+    <button class="button" type="submit" >Register</button>
+  
+  </form>
